@@ -1,0 +1,96 @@
+.section {
+    padding: 6rem 1.5rem;
+    background: white;
+}
+
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    padding: 2.5rem;
+    border-radius: 1rem;
+    background: white;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border-color: #d97706;
+}
+
+.icon {
+    width: 4rem;
+    height: 4rem;
+    background: #fffbeb;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: #d97706;
+    font-size: 2rem;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 1rem;
+}
+
+.cardDesc {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.list {
+    list-style: none;
+    padding: 0;
+}
+
+.listItem {
+    display: flex;
+    align-items: center;
+    color: #334155;
+    margin-bottom: 0.75rem;
+    font-size: 0.95rem;
+}
+
+.listItem::before {
+    content: '✓';
+    color: #d97706;
+    font-weight: bold;
+    margin-right: 0.75rem;
+}

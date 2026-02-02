@@ -1,0 +1,109 @@
+.section {
+    padding: 6rem 1.5rem;
+    background: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.card {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+    border: 1px solid #e2e8f0;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    color: #64748b;
+}
+
+.formGroup {
+    margin-bottom: 2rem;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: #334155;
+}
+
+.range {
+    width: 100%;
+    height: 8px;
+    background: #e2e8f0;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 24px;
+    height: 24px;
+    background: #d97706;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.2);
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.range::-webkit-slider-thumb:hover {
+    transform: scale(1.1);
+}
+
+.resultBox {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.resultLabel {
+    color: #64748b;
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.resultValue {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #d97706;
+    line-height: 1;
+}
+
+.resultNote {
+    font-size: 0.875rem;
+    color: #94a3b8;
+    margin-top: 1rem;
+}
+
+.numberInput {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+    border: 1px solid #cbd5e1;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    text-align: right;
+}
