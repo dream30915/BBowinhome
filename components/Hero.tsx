@@ -7,21 +7,17 @@ export default function Hero() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
-                        รับจำนอง ขายฝาก <br />
-                        <span className={styles.highlight}>ให้วงเงินสูง</span> อนุมัติไว
+                        <span className={styles.highlight}>นวัตกรรมการเงิน</span> เพื่ออสังหาริมทรัพย์<br />
+                        ที่คุณวางใจได้ 100%
                     </h1>
                     <p className={styles.subtitle}>
-                        เปลี่ยนโฉนดให้เป็นเงินทุนหมุนเวียน ดอกเบี้ยต่ำถูกกฎหมาย ไม่เช็คเครดิตบูโร
-                        อนุมัติภายใน 1 วัน รับเงินทันที ณ กรมที่ดิน
-                        บริการสุภาพ ตรงไปตรงมา
+                        BBowinhome ให้บริการจำนองและขายฝากด้วยมาตรฐานระดับสากล
+                        อนุมัติวงเงินสูง ดอกเบี้ยเป็นธรรม ถูกต้องตามกฎหมายทุกขั้นตอน
+                        เปลี่ยนสินทรัพย์ให้เป็นสภาพคล่องได้อย่างมั่นใจ
                     </p>
-                    <div className={styles.actions}>
-                        <Link href="#contact" className="btn btn-primary">
-                            ประเมินราคาฟรี
-                        </Link>
-                        <Link href="#services" className="btn" style={{ background: 'white', border: '1px solid #cbd5e1' }}>
-                            ดูอัตราดอกเบี้ย
-                        </Link>
+                    <div className={styles.ctaGroup}>
+                        <a href="#assessment" className={styles.primaryBtn}>ประเมินวงเงินฟรี</a>
+                        <a href="#contact" className={styles.secondaryBtn}>ปรึกษาผู้เชี่ยวชาญ</a>
                     </div>
                 </div>
 

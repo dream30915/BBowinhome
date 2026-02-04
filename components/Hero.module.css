@@ -4,23 +4,16 @@
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.75)), url('/hero-bg-luxury.png');
+    background-size: cover;
+    background-position: center;
     overflow: hidden;
     padding-top: 80px;
-    /* Offset for navbar */
 }
 
 .hero::before {
-    content: '';
-    position: absolute;
-    top: -20%;
-    right: -10%;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(217, 119, 6, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
-    border-radius: 50%;
-    z-index: 1;
-    filter: blur(40px);
+    display: none;
+    /* Remove abstract circle for cleaner look */
 }
 
 .container {
@@ -40,9 +33,7 @@
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 1.5rem;
-    background: linear-gradient(to bottom, #0f172a, #334155);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: white;
     letter-spacing: -0.02em;
 }
 
