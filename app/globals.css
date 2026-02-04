@@ -3,35 +3,41 @@
 /* Added for headings */
 
 :root {
-  /* Premium Palette */
-  --primary: #0B1120;
-  /* Deepest Navy */
-  --primary-light: #1E293B;
-  /* Navy Slate */
-  --secondary: #B8860B;
-  /* Metallic Gold */
-  --secondary-glow: #D4AF37;
-  /* Bright Gold */
-  --secondary-pale: #F3E5AB;
-  /* Pale Gold Background */
+  /* Vibrant & Wealth Palette (Red/Orange) */
+  --primary: #991B1B;
+  /* Deep Red (Dragon/Wealth) */
+  --primary-light: #FCA5A5;
+  /* Light Red */
 
-  --accent: #F8FAFC;
-  /* Slate 50 - Off white background */
-  --surface: #FFFFFF;
+  --secondary: #F97316;
+  /* Bright Orange */
+  --secondary-glow: #FDBA74;
+  /* Soft Orange */
+  --secondary-pale: #FFF7ED;
+  /* Pale Orange Background */
 
-  --text-dark: #334155;
-  /* Slate 700 - Softer black */
-  --text-light: #64748b;
-  /* Slate 500 */
+  --accent: #FFFFFF;
+  /* Pure White items */
+  --surface: #FFF1F2;
+  /* Very light red/pink tint background */
+
+  --text-dark: #1F2937;
+  /* Gray 800 - Contrast text */
+  --text-light: #4B5563;
+  /* Gray 600 */
   --text-white: #FFFFFF;
 
-  --gold-gradient: linear-gradient(135deg, #B8860B 0%, #D4AF37 50%, #B8860B 100%);
-  --navy-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  /* Fire/Sunset Gradients */
+  --gold-gradient: linear-gradient(135deg, #F97316 0%, #F59E0B 100%);
+  /* Orange to Amber */
+  --navy-gradient: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+  /* Red to Dark Red */
 
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --shadow-gold: 0 10px 25px -5px rgba(184, 134, 11, 0.15);
+  --shadow-gold: 0 10px 25px -5px rgba(220, 38, 38, 0.25);
+  /* Red Shadow */
 }
 
 * {
