@@ -1,7 +1,8 @@
 .footer {
-    background: #0f172a;
-    color: white;
-    padding: 4rem 1.5rem 2rem;
+    background: var(--primary);
+    color: var(--text-white);
+    padding: 5rem 1.5rem 2rem;
+    border-top: 1px solid var(--primary-light);
 }
 
 .container {
@@ -12,14 +13,17 @@
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr;
-    gap: 3rem;
-    margin-bottom: 3rem;
+    gap: 4rem;
+    margin-bottom: 4rem;
 }
 
 .brandDesc {
+    color: var(--text-light);
+    /* Slate 500 on dark bg might need adjustment, but text-light is usually grayish */
     color: #94a3b8;
-    line-height: 1.6;
-    margin-top: 1rem;
+    /* Keep explicit for dark bg readability if var is too dark */
+    line-height: 1.8;
+    margin-top: 1.5rem;
     max-width: 400px;
 }
 
@@ -27,7 +31,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: #fbbf24;
+    color: var(--secondary);
 }
 
 .linkList {
@@ -36,26 +40,30 @@
 }
 
 .linkItem {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
 }
 
 .link {
     color: #cbd5e1;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: all 0.2s;
 }
 
 .link:hover {
-    color: #fbbf24;
+    color: var(--secondary-glow);
+    padding-left: 5px;
 }
 
 .contactInfo p {
-    margin-bottom: 0.75rem;
+    margin-bottom: 1rem;
     color: #cbd5e1;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .copyright {
-    border-top: 1px solid #1e293b;
+    border-top: 1px solid var(--primary-light);
     padding-top: 2rem;
     text-align: center;
     color: #64748b;
@@ -65,5 +73,6 @@
 @media (max-width: 768px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: 2.5rem;
     }
 }

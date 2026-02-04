@@ -1,133 +1,145 @@
 .hero {
-    min-height: 100vh;
-    width: 100%;
+    background-color: var(--accent);
+    padding: 6rem 0 4rem;
+    overflow: hidden;
+    position: relative;
+    min-height: 80vh;
     display: flex;
     align-items: center;
-    position: relative;
-    background: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.75)), url('/hero-bg-luxury.png');
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
-    padding-top: 80px;
-}
-
-.hero::before {
-    display: none;
-    /* Remove abstract circle for cleaner look */
 }
 
 .container {
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
-    position: relative;
-    z-index: 2;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.1fr 0.9fr;
+    /* Text gets slightly more space */
     gap: 4rem;
     align-items: center;
+    width: 100%;
+}
+
+.content {
+    z-index: 10;
 }
 
 .title {
-    font-size: 4rem;
-    font-weight: 800;
-    line-height: 1.1;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
     margin-bottom: 1.5rem;
-    color: white;
+    color: var(--primary);
     letter-spacing: -0.02em;
 }
 
 .highlight {
-    color: #d97706;
-    -webkit-text-fill-color: #d97706;
+    background: var(--gold-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
 
 .subtitle {
-    font-size: 1.25rem;
-    color: #64748b;
+    font-size: 1.125rem;
+    line-height: 1.8;
+    color: var(--text-light);
     margin-bottom: 2.5rem;
-    line-height: 1.6;
     max-width: 540px;
 }
 
-.actions {
+.ctaGroup {
     display: flex;
     gap: 1rem;
 }
 
+.primaryBtn {
+    background: var(--navy-gradient);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: var(--shadow-md);
+    border: none;
+    cursor: pointer;
+}
+
+.primaryBtn:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.secondaryBtn {
+    background: transparent;
+    color: var(--primary);
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    border: 1px solid var(--primary-light);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.secondaryBtn:hover {
+    background: white;
+    box-shadow: var(--shadow-sm);
+    transform: translateY(-2px);
+}
+
 .imageWrapper {
     position: relative;
-    height: 500px;
-    background: rgba(255, 255, 255, 0.5);
-    backdrop-filter: blur(10px);
     border-radius: 20px;
-    box-shadow: 0 20px 40px -5px rgba(0, 0, 0, 0.1);
-    border: 1px solid rgba(255, 255, 255, 0.8);
     overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    box-shadow: var(--shadow-gold);
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s ease;
 }
 
-.cardContent {
-    padding: 2rem;
-    text-align: center;
+.imageWrapper:hover {
+    transform: perspective(1000px) rotateY(0deg);
 }
 
-.cardTitle {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    color: #0f172a;
+.heroImage {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
 }
 
-.stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.statItem h3 {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #d97706;
-}
-
-.statItem p {
-    font-size: 0.875rem;
-    color: #64748b;
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, transparent 0%, rgba(11, 17, 32, 0.3) 100%);
+    pointer-events: none;
 }
 
 @media (max-width: 960px) {
-    .title {
-        font-size: 3rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero {
-        min-height: auto;
-        padding-bottom: 4rem;
-    }
-
     .container {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 2rem;
+        gap: 3rem;
+    }
+
+    .title {
+        font-size: 2.5rem;
     }
 
     .subtitle {
-        margin-left: auto;
-        margin-right: auto;
+        margin: 0 auto 2rem;
     }
 
-    .actions {
+    .ctaGroup {
         justify-content: center;
     }
 
     .imageWrapper {
-        height: 300px;
-        margin-top: 2rem;
+        transform: none;
+        max-width: 500px;
+        margin: 0 auto;
+    }
+
+    .imageWrapper:hover {
+        transform: none;
     }
 }

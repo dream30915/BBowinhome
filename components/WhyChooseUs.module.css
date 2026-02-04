@@ -1,8 +1,6 @@
 .section {
     padding: 6rem 1.5rem;
-    background: #0f172a;
-    /* Dark Navy for contrast */
-    color: white;
+    background: white;
 }
 
 .container {
@@ -18,17 +16,29 @@
 .title {
     font-size: 2.5rem;
     font-weight: 700;
-    margin-bottom: 2rem;
-    background: linear-gradient(to right, #fbbf24, #d97706);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: var(--primary);
+    margin-bottom: 1rem;
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    color: var(--text-light);
+    font-size: 1.1rem;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    gap: 3rem;
-    align-items: start;
+    grid-template-columns: 1.2fr 0.8fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contentBox {
+    background: var(--accent);
+    padding: 3rem;
+    border-radius: 1.5rem;
+    position: relative;
+    border-left: 4px solid var(--secondary);
 }
 
 .list {
@@ -42,37 +52,76 @@
 .listItem {
     display: flex;
     align-items: flex-start;
-    font-size: 1.1rem;
-    color: #cbd5e1;
-    line-height: 1.6;
+    font-size: 1.05rem;
+    color: var(--text-dark);
 }
 
-.listItem::before {
-    content: '★';
-    color: #d97706;
-    font-size: 1.5rem;
+.checkIcon {
+    color: var(--secondary);
+    font-weight: bold;
     margin-right: 1rem;
+    font-size: 1.25rem;
     line-height: 1;
+    margin-top: 2px;
 }
 
 .imageBox {
     position: relative;
-    height: 500px;
-    background: #1e293b;
-    border-radius: 20px;
+    border-radius: 1.5rem;
     overflow: hidden;
-    border: 1px solid #334155;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    height: 100%;
+    min-height: 500px;
+    box-shadow: var(--shadow-lg);
 }
 
-@media (max-width: 768px) {
+.image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.imageOverlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(11, 17, 32, 0.4), transparent);
+}
+
+.expBadge {
+    position: absolute;
+    bottom: 2rem;
+    right: 2rem;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(4px);
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.expNumber {
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--secondary);
+    line-height: 1;
+}
+
+.expText {
+    font-size: 0.875rem;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+@media (max-width: 960px) {
     .grid {
         grid-template-columns: 1fr;
+        gap: 2rem;
     }
 
     .imageBox {
-        height: 300px;
+        min-height: 300px;
+        order: -1;
     }
 }

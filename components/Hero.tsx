@@ -7,22 +7,22 @@ export default function Hero() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <h1 className={styles.title}>
-                        <span className={styles.highlight}>นวัตกรรมการเงิน</span> เพื่ออสังหาริมทรัพย์<br />
-                        ที่คุณวางใจได้ 100%
+                        <span className={styles.highlight}>เอกสิทธิ์ทางการเงิน</span><br />
+                        เพื่ออสังหาริมทรัพย์ระดับพรีเมียม
                     </h1>
                     <p className={styles.subtitle}>
-                        BBowinhome ให้บริการจำนองและขายฝากด้วยมาตรฐานระดับสากล
-                        อนุมัติวงเงินสูง ดอกเบี้ยเป็นธรรม ถูกต้องตามกฎหมายทุกขั้นตอน
-                        เปลี่ยนสินทรัพย์ให้เป็นสภาพคล่องได้อย่างมั่นใจ
+                        พันธมิตรที่ปรึกษาด้านการลงทุนขายฝากและจำนองอสังหาริมทรัพย์ <br />
+                        เชื่อมโยงโอกาสทางการเงินด้วยมาตรฐานระดับสากล โปร่งใส และถูกต้องตามกฎหมาย
                     </p>
                     <div className={styles.ctaGroup}>
-                        <a href="#assessment" className={styles.primaryBtn}>ประเมินวงเงินฟรี</a>
+                        <a href="#assessment" className={styles.primaryBtn}>ประเมินวงเงินสินทรัพย์</a>
                         <a href="#contact" className={styles.secondaryBtn}>ปรึกษาผู้เชี่ยวชาญ</a>
                     </div>
                 </div>
 
-                <div className={styles.imageWrapper} style={{ background: 'none', border: 'none', boxShadow: 'none' }}>
-                    <img src="/banner-main.jpg" alt="รับจำนอง ขายฝาก" style={{ width: '100%', height: '100%', objectFit: 'contain', borderRadius: '20px', boxShadow: '0 20px 40px -5px rgba(0,0,0,0.2)' }} />
+                <div className={styles.imageWrapper}>
+                    <div className={styles.imageOverlay} />
+                    <img src="/banner-main.jpg" alt="Premium Real Estate Investment" className={styles.heroImage} />
                 </div>
             </div>
         </section>

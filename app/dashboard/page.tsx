@@ -1,79 +1,87 @@
-import Link from 'next/link';
 import styles from './Dashboard.module.css';
-import Navbar from '@/components/Navbar';
 
 export default function Dashboard() {
-    // Mock Data
+    // Premium Mock Data
+    const stats = [
+        { label: 'มูลค่าพอร์ตลงทุน', value: '฿128.5M', change: '+12.5%', isUp: true },
+        { label: 'ผลตอบแทนเฉลี่ย (Yield)', value: '11.2%', change: '+0.8%', isUp: true },
+        { label: 'เคสรออนุมัติ', value: '12', change: 'เร่งด่วน 3', isUp: false },
+    ];
+
     const requests = [
-        { id: 1, name: 'คุณวิชัย', type: 'ที่ดินเปล่า', size: '2 ไร่', amount: '2,000,000', status: 'pending', date: '02/02/2026' },
-        { id: 2, name: 'คุณสมศักดิ์', type: 'บ้านเดี่ยว', size: '60 ตร.ว.', amount: '5,000,000', status: 'approved', date: '01/02/2026' },
-        { id: 3, name: 'คุณมานี', type: 'คอนโด', size: '35 ตร.ม.', amount: '1,500,000', status: 'pending', date: '02/02/2026' },
+        { id: 101, name: 'คุณวิชัย เจริญกุล', type: 'ที่ดินเปล่า (EEC)', location: 'ชลบุรี', amount: '25,000,000', status: 'pending', date: '05/02/2026' },
+        { id: 102, name: 'บจก. สยามเรียลเอสเตท', type: 'โรงแรม 3 ดาว', location: 'ภูเก็ต', amount: '85,000,000', status: 'review', date: '04/02/2026' },
+        { id: 103, name: 'คุณภิรมย์ สุขสวัสดิ์', type: 'บ้านเดี่ยว (Luxury)', location: 'บางนา', amount: '12,500,000', status: 'approved', date: '02/02/2026' },
+        { id: 104, name: 'คุณสมชาย ใจดี', type: 'อาคารพาณิชย์', location: 'สยาม', amount: '45,000,000', status: 'rejected', date: '01/02/2026' },
     ];
 
     return (
-        <>
-            <Navbar />
-            <div className={styles.dashboard}>
-                <div className="container" style={{ maxWidth: '1280px', margin: '0 auto' }}>
-                    <div className={styles.header}>
-                        <h1 className={styles.title}>แผงควบคุม (Owner)</h1>
-                        <div className="btn btn-primary" style={{ cursor: 'default' }}>Admin Mode</div>
-                    </div>
+        <div className={styles.dashboardContainer}>
+            <header className={styles.topHeader}>
+                <h1 className={styles.pageTitle}>Dashboard Overview</h1>
+                <div className={styles.dateDisplay}>5 กุมภาพันธ์ 2026</div>
+            </header>
 
-                    <div className={styles.statsGrid}>
-                        <div className={`${styles.statCard} ${styles.gold}`}>
-                            <div className={styles.statValue}>12</div>
-                            <div className={styles.statLabel}>รอตรวจสอบ</div>
+            <div className={styles.statsGrid}>
+                {stats.map((stat, index) => (
+                    <div key={index} className={styles.statCard}>
+                        <div className={styles.statInfo}>
+                            <p className={styles.statLabel}>{stat.label}</p>
+                            <p className={styles.statValue}>{stat.value}</p>
                         </div>
-                        <div className={styles.statCard}>
-                            <div className={styles.statValue}>54</div>
-                            <div className={styles.statLabel}>อนุมัติเดือนนี้</div>
-                        </div>
-                        <div className={styles.statCard}>
-                            <div className={styles.statValue}>฿12M</div>
-                            <div className={styles.statLabel}>ยอดวงเงินรวม</div>
+                        <div className={`${styles.statChange} ${stat.isUp ? styles.up : styles.down}`}>
+                            {stat.change}
                         </div>
                     </div>
+                ))}
+            </div>
 
-                    <div className={styles.tableSection}>
-                        <h2 className={styles.tableHeader}>รายการขอประเมินล่าสุด</h2>
-                        <table className={styles.table}>
-                            <thead>
-                                <tr>
-                                    <th>วันที่</th>
-                                    <th>ชื่อผู้ติดต่อ</th>
-                                    <th>ทรัพย์สิน</th>
-                                    <th>ขนาด</th>
-                                    <th>วงเงิน (บาท)</th>
-                                    <th>สถานะ</th>
-                                    <th>จัดการ</th>
+            <div className={styles.section}>
+                <div className={styles.sectionHeader}>
+                    <h2 className={styles.sectionTitle}>รายการขอสินเชื่อล่าสุด (Recent Requests)</h2>
+                    <button className={styles.viewAllBtn}>ดูทั้งหมด</button>
+                </div>
+
+                <div className={styles.tableWrapper}>
+                    <table className={styles.table}>
+                        <thead>
+                            <tr>
+                                <th>Ref ID</th>
+                                <th>วันที่</th>
+                                <th>ผู้ยื่นคำขอ</th>
+                                <th>ทรัพย์สิน</th>
+                                <th>ทำเล</th>
+                                <th>วงเงินประเมิน</th>
+                                <th>สถานะ</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {requests.map((req) => (
+                                <tr key={req.id}>
+                                    <td className={styles.refId}>#{req.id}</td>
+                                    <td>{req.date}</td>
+                                    <td className={styles.clientName}>{req.name}</td>
+                                    <td>{req.type}</td>
+                                    <td>{req.location}</td>
+                                    <td className={styles.amount}>฿{req.amount}</td>
+                                    <td>
+                                        <span className={`${styles.statusBadge} ${styles[req.status]}`}>
+                                            {req.status === 'pending' && 'รอตรวจสอบ'}
+                                            {req.status === 'review' && 'กำลังพิจารณา'}
+                                            {req.status === 'approved' && 'อนุมัติแล้ว'}
+                                            {req.status === 'rejected' && 'ไม่อนุมัติ'}
+                                        </span>
+                                    </td>
+                                    <td>
+                                        <button className={styles.actionBtn}>ตรวจสอบ</button>
+                                    </td>
                                 </tr>
-                            </thead>
-                            <tbody>
-                                {requests.map((req) => (
-                                    <tr key={req.id}>
-                                        <td>{req.date}</td>
-                                        <td>{req.name}</td>
-                                        <td>{req.type}</td>
-                                        <td>{req.size}</td>
-                                        <td>{req.amount}</td>
-                                        <td>
-                                            <span className={`${styles.status} ${req.status === 'pending' ? styles.pending : styles.approved}`}>
-                                                {req.status === 'pending' ? 'รอตรวจสอบ' : 'อนุมัติแล้ว'}
-                                            </span>
-                                        </td>
-                                        <td>
-                                            <button style={{ border: 'none', background: 'none', color: '#0f172a', fontWeight: 'bold', cursor: 'pointer' }}>
-                                                ดูรายละเอียด
-                                            </button>
-                                        </td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                    </div>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
             </div>
-        </>
+        </div>
     );
 }
