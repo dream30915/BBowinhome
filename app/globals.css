@@ -3,8 +3,10 @@
 
 :root {
   /* Premium Palette */
-  --primary: #8B1E1E;
-  /* Deep Royale Red */
+  /* Premium Palette */
+  --primary: #DC2626;
+  /* Bright Red for high contrast */
+  /* Deep Royale Red was #8B1E1E - too dark */
   --primary-light: #F87171;
 
   --secondary: #B45309;
