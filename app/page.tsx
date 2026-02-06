@@ -8,16 +8,20 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FloatingContact from "@/components/FloatingContact";
 import Articles from "@/components/Articles";
 import Footer from "@/components/Footer";
+import FeaturedListings from "@/components/FeaturedListings";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (
     <main>
       <Navbar />
       <Hero />
+      <FeaturedListings />
       <Process />
       <Services />
       <InterestCalculator />
       <WhyChooseUs />
+      <Testimonials />
       <Articles />
       <AssessmentForm />
       <FloatingContact />
