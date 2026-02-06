@@ -6,7 +6,7 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
-                    <img src="/logo.jpg" alt="BBowinhome Logo" style={{ height: '50px', objectFit: 'contain' }} />
+                    <img src="/logo.jpg" alt="BBowinhome Logo" style={{ height: '90px', objectFit: 'contain' }} />
                 </Link>
                 <div className={styles.links}>
                     <Link href="#services" className={styles.link}>บริการของเรา</Link>

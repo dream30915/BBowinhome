@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 80px;
+    height: 100px;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
@@ -27,6 +27,7 @@
     color: #0f172a;
     text-decoration: none;
     background: linear-gradient(135deg, #0f172a 0%, #d97706 100%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

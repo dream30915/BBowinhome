@@ -8,11 +8,11 @@ export default function Hero() {
                 <div className={styles.content}>
                     <h1 className={styles.title}>
                         <span className={styles.highlight}>BBowinhome</span><br />
-                        ขายบ้านมือสองรีโนเวทและบ้านเช่า <br />ใกล้นิคมบ่อวิน-ปลวกแดง
+                        ขายบ้านมือสองราคาถูก โซนบ่อวิน ใกล้นิคมฯ
                     </h1>
                     <p className={styles.subtitle}>
-                        รับซื้อ-ขายฝาก-จำนำ บ้าน คอนโด ที่ดิน <br />
-                        เงินสด ด่วน ปิดไว | แก้ปัญหาสภาพคล่อง
+                        คนทำงานผ่อนสบาย ดูแลสินเชื่อให้จบ <br />
+                        <span style={{ fontSize: '0.9em', opacity: 0.9 }}>นัดดูบ้าน/ประเมินราคาฟรี ได้ทุกวัน | Viewings & Free Valuation Daily</span>
                     </p>
                     <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '2.5rem', fontSize: '0.95rem', color: '#64748b', fontWeight: 500 }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✅ อนุมัติไว</span>
@@ -20,8 +20,8 @@ export default function Hero() {
                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>✅ ราคายุติธรรม</span>
                     </div>
                     <div className={styles.ctaGroup}>
-                        <a href="#assessment" className={styles.primaryBtn}>ประเมินวงเงินสินทรัพย์</a>
-                        <a href="#contact" className={styles.secondaryBtn}>ปรึกษาผู้เชี่ยวชาญ</a>
+                        <a href="tel:0839892828" className={styles.primaryBtn}>👉 โทรตอนนี้ | Call Now</a>
+                        <a href="https://lin.ee/T0tRLeC" target="_blank" className={styles.secondaryBtn}>👉 แอดไลน์ | Add LINE</a>
                     </div>
                 </div>
 
