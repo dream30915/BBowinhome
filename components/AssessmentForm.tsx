@@ -19,8 +19,8 @@ export default function AssessmentForm() {
         <section id="contact" className={styles.section}>
             <div className={styles.container}>
                 <div className={styles.header}>
-                    <h2 className={styles.title}>ประเมินราคาฟรี</h2>
-                    <p className={styles.subtitle}>กรอกข้อมูลทรัพย์สินเบื้องต้นเพื่อให้เจ้าหน้าที่ติดต่อกลับ</p>
+                    <h2 className={styles.title}>ปรึกษาด่วน เราจะรีบตอบกลับ</h2>
+                    <p className={styles.subtitle}>ประเมินราคาฟรี! กรอกข้อมูลทรัพย์สินเบื้องต้นเพื่อให้เจ้าหน้าที่ติดต่อกลับ</p>
                 </div>
 
                 <form className={styles.formCard} onSubmit={handleSubmit}>
