@@ -47,7 +47,8 @@ body {
   overflow-x: hidden;
   font-family: 'Kanit', sans-serif;
   background-color: var(--accent);
-  color: var(--text-dark);
+  color: #000000 !important;
+  /* Force Pure Black */
   line-height: 1.6;
 }
 
