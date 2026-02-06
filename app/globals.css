@@ -18,9 +18,9 @@
   --surface: #FFFFFF;
   /* Pure White Surface */
 
-  --text-dark: #27272a;
-  /* Zinc 800 */
-  --text-light: #52525b;
+  --text-dark: #000000;
+  /* Pure Black for max contrast */
+  --text-light: #374151;
   /* Zinc 600 */
   --text-white: #FFFFFF;
 
