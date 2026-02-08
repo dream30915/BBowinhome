@@ -2,10 +2,16 @@ import Link from 'next/link';
 import { Home, MapPin, Bed, Bath, MoveRight } from 'lucide-react';
 import styles from './FeaturedListings.module.css';
 
-import { properties } from '../data/properties';
+import { properties as localProperties } from '../data/properties';
+import { fetchProperties } from '../utils/fetchProperties';
 
-export default function FeaturedListings() {
-    const listings = properties;
+// Make component async to support server-side fetching
+export default async function FeaturedListings() {
+    // Try to fetch from Google Sheet first
+    const sheetProperties = await fetchProperties();
+
+    // Use sheet data if available, otherwise fall back to local data
+    const listings = sheetProperties.length > 0 ? sheetProperties : localProperties;
 
     return (
         <section id="listings" className={styles.section}>
