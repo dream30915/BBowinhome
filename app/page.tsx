@@ -16,10 +16,10 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
-      <FeaturedListings />
       <Services />
       <InterestCalculator />
       <WhyChooseUs />
+      <FeaturedListings />
       <Testimonials />
       {/* <Articles /> Removed as per request */}
       <FloatingContact />
