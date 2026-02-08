@@ -17,15 +17,11 @@ export default function Home() {
       <Navbar />
       <Hero />
       <FeaturedListings />
-      <Process />
       <Services />
       <InterestCalculator />
       <WhyChooseUs />
       <Testimonials />
-      <Testimonials />
       {/* <Articles /> Removed as per request */}
-      <AssessmentForm />
-      <AssessmentForm />
       <FloatingContact />
       <Footer />
       {/* Contact section integrated into AssessmentForm */}
