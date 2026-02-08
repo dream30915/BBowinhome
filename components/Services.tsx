@@ -14,7 +14,7 @@ export default function Services() {
 
                 <div className={styles.grid}>
                     {/* Card 1: Sell Renovated Homes */}
-                    <div className={styles.card}>
+                    <a href="https://lin.ee/T0tRLeC" target="_blank" className={styles.card} style={{ textDecoration: 'none', cursor: 'pointer' }}>
                         <div className={styles.imageContainer}>
                             <Home className={styles.icon} size={48} />
                         </div>
@@ -22,11 +22,11 @@ export default function Services() {
                         <p className={styles.cardDesc}>
                             บ้านสวย สภาพดี รีโนเวทใหม่ทั้งหลัง พร้อมเข้าอยู่ ใกล้นิคมฯ
                         </p>
-                        <button className={styles.cardBtn}>ดูรายการบ้าน</button>
-                    </div>
+                        <span className={styles.cardBtn}>ดูรายการบ้าน</span>
+                    </a>
 
                     {/* Card 2: Houses for Rent */}
-                    <div className={styles.card}>
+                    <a href="https://lin.ee/T0tRLeC" target="_blank" className={styles.card} style={{ textDecoration: 'none', cursor: 'pointer' }}>
                         <div className={styles.imageContainer}>
                             <Key className={styles.icon} size={48} />
                         </div>
@@ -34,8 +34,8 @@ export default function Services() {
                         <p className={styles.cardDesc}>
                             มีบ้านเช่าในโซนบ่อวิน เฟอร์นิเจอร์ครบ หิ้วกระเป๋าเข้าอยู่ได้เลย
                         </p>
-                        <button className={styles.cardBtn}>ดูบ้านเช่า</button>
-                    </div>
+                        <span className={styles.cardBtn}>ดูบ้านเช่า</span>
+                    </a>
 
                     {/* Card 3: Buy Property */}
                     <a href="https://lin.ee/T0tRLeC" target="_blank" className={styles.card} style={{ textDecoration: 'none', cursor: 'pointer' }}>
@@ -50,7 +50,7 @@ export default function Services() {
                     </a>
 
                     {/* Card 4: Pawn / Consignment */}
-                    <div className={`${styles.card} ${styles.highlightCard}`}>
+                    <a href="https://lin.ee/T0tRLeC" target="_blank" className={`${styles.card} ${styles.highlightCard}`} style={{ textDecoration: 'none', cursor: 'pointer' }}>
                         <div className={styles.imageContainer}>
                             <Landmark className={styles.icon} size={48} />
                         </div>
@@ -58,8 +58,8 @@ export default function Services() {
                         <p className={styles.cardDesc}>
                             เปลี่ยนโฉนดเป็นเงินสด เสริมสภาพคล่อง อนุมัติไว ดอกเบี้ยตามกฎหมาย
                         </p>
-                        <button className={`${styles.cardBtn} ${styles.goldBtn}`}>ประเมินวงเงิน</button>
-                    </div>
+                        <span className={`${styles.cardBtn} ${styles.goldBtn}`}>ประเมินวงเงิน</span>
+                    </a>
                 </div>
             </div>
         </section>

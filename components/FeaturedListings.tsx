@@ -2,39 +2,10 @@ import Link from 'next/link';
 import { Home, MapPin, Bed, Bath, MoveRight } from 'lucide-react';
 import styles from './FeaturedListings.module.css';
 
+import { properties } from '../data/properties';
+
 export default function FeaturedListings() {
-    const listings = [
-        {
-            id: 1,
-            title: "บ้านเดี่ยว 2 ชั้น รีโนเวทใหม่",
-            location: "ต.บ่อวิน อ.ศรีราชา (ใกล้โรบินสัน)",
-            price: "2.89 ลบ.",
-            status: "ขาย",
-            specs: "3 นอน 2 น้ำ 2 จอด",
-            image: "https://images.unsplash.com/photo-1580587771525-78b9dba3b91d?auto=format&fit=crop&w=800&q=80",
-            tag: "Renovated"
-        },
-        {
-            id: 2,
-            title: "ทาวน์โฮมพร้อมอยู่ เฟอร์ฯ ครบ",
-            location: "นิคมอมตะซิตี้ ระยอง",
-            price: "6,500 / เดือน",
-            status: "เช่า",
-            specs: "2 นอน 1 น้ำ 1 จอด",
-            image: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&w=800&q=80",
-            tag: "Ready to move"
-        },
-        {
-            id: 3,
-            title: "ที่ดินเปล่า ถมแล้ว 1 งาน",
-            location: "ต.ปลวกแดง (ซอยแม่สอด)",
-            price: "1.2 ลบ.",
-            status: "ขาย",
-            specs: "100 ตร.ว.",
-            image: "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80",
-            tag: "Hot Deal"
-        }
-    ];
+    const listings = properties;
 
     return (
         <section id="listings" className={styles.section}>
