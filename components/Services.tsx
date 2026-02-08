@@ -38,7 +38,7 @@ export default function Services() {
                     </div>
 
                     {/* Card 3: Buy Property */}
-                    <div className={styles.card}>
+                    <a href="https://lin.ee/T0tRLeC" target="_blank" className={styles.card} style={{ textDecoration: 'none', cursor: 'pointer' }}>
                         <div className={styles.imageContainer}>
                             <Banknote className={styles.icon} size={48} />
                         </div>
@@ -46,8 +46,8 @@ export default function Services() {
                         <p className={styles.cardDesc}>
                             รับซื้อเงินสด ด่วน ปิดไว ให้ราคายุติธรรม
                         </p>
-                        <button className={styles.cardBtn}>เสนอขายทรัพย์</button>
-                    </div>
+                        <span className={styles.cardBtn}>เสนอขายทรัพย์</span>
+                    </a>
 
                     {/* Card 4: Pawn / Consignment */}
                     <div className={`${styles.card} ${styles.highlightCard}`}>

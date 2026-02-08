@@ -22,7 +22,9 @@ export default function Home() {
       <InterestCalculator />
       <WhyChooseUs />
       <Testimonials />
-      <Articles />
+      <Testimonials />
+      {/* <Articles /> Removed as per request */}
+      <AssessmentForm />
       <AssessmentForm />
       <FloatingContact />
       <Footer />
