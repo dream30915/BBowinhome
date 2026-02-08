@@ -6,13 +6,13 @@ export default function Navbar() {
         <nav className={styles.navbar}>
             <div className={styles.container}>
                 <Link href="/" className={styles.logo}>
-                    <img src="/logo.jpg?v=final" alt="BBowinhome Logo" style={{ height: '160px', objectFit: 'contain' }} />
+                    <img src="/logo_transparent.png" alt="BBowinhome Logo" />
                 </Link>
                 <div className={styles.links}>
                     <Link href="#services" className={styles.link}>บริการของเรา</Link>
                     <Link href="#process" className={styles.link}>ขั้นตอนการทำธุรกรรม</Link>
                     <Link href="#about" className={styles.link}>เกี่ยวกับเรา</Link>
-                    <Link href="#contact" className="btn btn-primary">ติดต่อประเมินราคา</Link>
+                    <Link href="#contact" className="btn btn-gold">ติดต่อประเมินราคา</Link>
                 </div>
             </div>
         </nav>

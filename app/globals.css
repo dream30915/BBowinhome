@@ -2,37 +2,44 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700;800&display=swap');
 
 :root {
-  /* Premium Palette */
-  /* Premium Palette */
+  /* Brand Palette (Red & Gold) */
   --primary: #DC2626;
-  /* Bright Red for high contrast */
-  /* Deep Royale Red was #8B1E1E - too dark */
-  --primary-light: #F87171;
+  /* Deep Red */
+  --primary-light: #EF4444;
+  /* Brighter Red */
+  --primary-dark: #991B1B;
+  /* Dark Red */
 
   --secondary: #B45309;
-  /* Bronze/Copper */
+  /* Bronze/Gold Base */
+  --secondary-light: #F59E0B;
+  /* Bright Gold */
   --secondary-glow: #FCD34D;
+  /* Pale Gold */
 
-  --accent: #FAFAF9;
-  /* Warm Ivory Background */
+  /* Very Light Gold Tint for backgrounds */
+  --accent: #FFFBEB;
   --surface: #FFFFFF;
-  /* Pure White Surface */
 
   --text-dark: #000000;
-  /* Pure Black for max contrast */
-  --text-light: #374151;
-  /* Zinc 600 */
+  /* Pure Black */
+  --text-gray: #374151;
+  /* Dark Gray */
+  --text-light: #6B7280;
+  /* Medium Gray */
   --text-white: #FFFFFF;
 
-  /* Luxury Gradients */
-  --gold-gradient: linear-gradient(135deg, #B45309 0%, #D97706 50%, #F59E0B 100%);
-  --navy-gradient: linear-gradient(135deg, #7f1d1d 0%, #991b1b 100%);
+  /* Gradients */
+  --gold-gradient: linear-gradient(135deg, #B45309 0%, #D97706 40%, #F59E0B 100%);
+  --red-gradient: linear-gradient(135deg, #991B1B 0%, #DC2626 100%);
+  --red-gold-gradient: linear-gradient(135deg, #DC2626 0%, #B45309 100%);
 
-  /* Elevated Shadows */
-  --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.02);
-  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.04);
-  --shadow-lg: 0 20px 40px -5px rgba(0, 0, 0, 0.08);
-  --shadow-gold: 0 20px 50px -10px rgba(180, 83, 9, 0.2);
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+  --shadow-red: 0 10px 25px -5px rgba(220, 38, 38, 0.3);
+  --shadow-gold: 0 10px 25px -5px rgba(180, 83, 9, 0.3);
 }
 
 * {
@@ -109,9 +116,9 @@ h6 {
 }
 
 .btn-primary {
-  background: var(--navy-gradient);
+  background: var(--red-gradient);
   color: var(--white);
-  box-shadow: 0 4px 15px rgba(127, 29, 29, 0.2);
+  box-shadow: 0 4px 15px rgba(220, 38, 38, 0.4);
 }
 
 .btn-primary:hover {

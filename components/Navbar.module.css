@@ -7,7 +7,8 @@
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    border-bottom: 3px solid #F59E0B;
+    box-shadow: 0 4px 20px -5px rgba(245, 158, 11, 0.3);
     transition: all 0.3s ease;
 }
 
@@ -15,33 +16,41 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 170px;
+    height: 120px;
     max-width: 1280px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    position: relative;
 }
 
 .logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: #0f172a;
-    text-decoration: none;
-    background: linear-gradient(135deg, #0f172a 0%, #d97706 100%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    z-index: 2000;
+}
+
+.logo img {
+    height: 220px !important;
+    width: auto;
+    object-fit: contain;
+    margin-top: 10px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
 }
 
 .links {
     display: flex;
     gap: 2rem;
     align-items: center;
+    margin-left: auto;
+    /* Push links to the right */
 }
 
 .link {
     color: #1e293b;
-    font-weight: 500;
-    font-size: 0.95rem;
+    font-weight: 700;
+    font-size: 1.15rem;
     transition: color 0.2s;
 }
 

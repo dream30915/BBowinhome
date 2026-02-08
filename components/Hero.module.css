@@ -54,7 +54,7 @@
 }
 
 .primaryBtn {
-    background: var(--navy-gradient);
+    background: var(--red-gradient);
     color: var(--white);
     padding: 1rem 2.5rem;
     border-radius: 4px;
@@ -74,26 +74,29 @@
     box-shadow: var(--shadow-gold);
 }
 
-.secondaryBtn {
-    background: transparent;
-    color: var(--primary);
+.lineBtn {
+    background: #06C755;
+    color: white;
     padding: 1rem 2.5rem;
     border-radius: 4px;
     font-weight: 600;
-    border: 1px solid var(--primary);
+    border: none;
     transition: all 0.3s;
     cursor: pointer;
     font-size: 1.1rem;
     text-decoration: none;
     display: inline-flex;
     align-items: center;
+    box-shadow: 0 4px 6px rgba(6, 199, 85, 0.2);
+    font-size: 1.25rem;
+    padding: 0.875rem 2.5rem;
+    letter-spacing: 0.02em;
 }
 
-.secondaryBtn:hover {
-    background: var(--primary);
-    color: white;
-    box-shadow: var(--shadow-sm);
+.lineBtn:hover {
+    background: #05a546;
     transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(6, 199, 85, 0.3);
 }
 
 .imageWrapper {
