@@ -29,7 +29,7 @@ export default function Hero() {
 
                 <div className={styles.imageWrapper}>
                     <div className={styles.imageOverlay} />
-                    <img src="/banner-main.jpg" alt="Premium Real Estate Investment" className={styles.heroImage} />
+                    <img src="/hero-new.png" alt="Premium Real Estate Investment" className={styles.heroImage} />
                 </div>
             </div>
         </section>
