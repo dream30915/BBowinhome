@@ -11,7 +11,7 @@ export default function Hero() {
                     </h1>
                     <p className={styles.subtitle}>
                         คนทำงานผ่อนสบาย ดูแลสินเชื่อให้จบ <br />
-                        <span style={{ fontSize: '0.9em', opacity: 0.9 }}>นัดดูบ้าน/ประเมินราคาฟรี ได้ทุกวัน | Viewings & Free Valuation Daily</span>
+                        <span style={{ fontSize: '0.9em', opacity: 0.9 }}>นัดดูบ้าน/ประเมินราคาฟรี ได้ทุกวัน</span>
                     </p>
                     <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '2.5rem', fontSize: '0.95rem', color: '#64748b', fontWeight: 500 }}>
                         <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: '#B45309', fontWeight: 700 }}>🏆 อนุมัติไว</span>
@@ -29,7 +29,7 @@ export default function Hero() {
 
                 <div className={styles.imageWrapper}>
                     <div className={styles.imageOverlay} />
-                    <img src="/hero-new.png" alt="Premium Real Estate Investment" className={styles.heroImage} />
+                    <img src="/poster.jpg" alt="Premium Real Estate Investment" className={styles.heroImage} />
                 </div>
             </div>
         </section>
