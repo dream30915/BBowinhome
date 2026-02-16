@@ -18,10 +18,8 @@
 }
 
 .brandDesc {
-    color: var(--text-light);
-    /* Slate 500 on dark bg might need adjustment, but text-light is usually grayish */
-    color: #94a3b8;
-    /* Keep explicit for dark bg readability if var is too dark */
+    color: #ffffff;
+    font-weight: 400;
     line-height: 1.8;
     margin-top: 1.5rem;
     max-width: 400px;
@@ -31,7 +29,7 @@
     font-size: 1.1rem;
     font-weight: 600;
     margin-bottom: 1.5rem;
-    color: var(--secondary);
+    color: #ffffff;
 }
 
 .linkList {
@@ -44,9 +42,10 @@
 }
 
 .link {
-    color: #cbd5e1;
+    color: #ffffff;
     text-decoration: none;
     transition: all 0.2s;
+    font-weight: 500;
 }
 
 .link:hover {
@@ -56,7 +55,7 @@
 
 .contactInfo p {
     margin-bottom: 1rem;
-    color: #cbd5e1;
+    color: #ffffff;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -66,7 +65,7 @@
     border-top: 1px solid var(--primary-light);
     padding-top: 2rem;
     text-align: center;
-    color: #64748b;
+    color: #ffffff;
     font-size: 0.875rem;
 }
 
