@@ -2,16 +2,10 @@ import styles from './WhyChooseUs.module.css';
 
 export default function WhyChooseUs() {
     const reasons = [
-        "นิติบุคคลถูกต้องตามกฎหมาย จดทะเบียนพาณิชย์ครบถ้วน",
-        "ระบบที่ปรึกษา Private Fund ดูแลแบบ One-on-One",
-        "สัญญามาตรฐานสากล เป็นธรรม และตรวจสอบได้ทุกบรรทัด",
-        "ประเมินมูลค่าทรัพย์สินตามราคาตลาด (Market Price)",
-        "อัตราดอกเบี้ยพิเศษ (Effective Rate) แบบลดต้นลดดอก",
-        "อนุมัติวงเงินรวดเร็ว ทำนิติกรรมรับเช็คที่กรมที่ดินทันที",
-        "นโยบายรักษาความลับลูกค้าขั้นสูงสุด (Strict Confidentiality)",
-        "ยึดหลักการเจรจาหาทางออกและประนอมหนี้เป็นอันดับแรก",
-        "ไม่มีสัญญาแอบแฝง หรือค่าธรรมเนียมซ่อนเร้น",
-        "วงเงินรองรับระดับ High Value Asset ถึง 100 ล้านบาท"
+        "โปร่งใส ไม่มีค่าแอบแฝง",
+        "สัญญาถูกกฎหมาย อธิบายก่อนเซ็น",
+        "เงินไว ไม่กดราคา ไม่เอาเปรียบ",
+        "มีแผนไถ่ถอนจริง ดูแลเหมือนพาร์ทเนอร์"
     ];
 
     return (
@@ -19,7 +13,10 @@ export default function WhyChooseUs() {
             <div className={styles.container}>
                 <div className={styles.header}>
                     <h2 className={styles.title}>ทำไมต้องเลือก BBowinhome</h2>
-                    <p className={styles.subtitle}>มาตรฐานที่เป็นเลิศและความน่าเชื่อถือที่คุณวางใจ</p>
+                    <p className={styles.subtitle}>
+                        เพราะเราไม่ได้แค่ให้เงินเร็ว<br />
+                        แต่ช่วยคิด วางแผน และปิดความเสี่ยงให้คุณ
+                    </p>
                 </div>
 
                 <div className={styles.grid}>
@@ -27,11 +24,14 @@ export default function WhyChooseUs() {
                         <ul className={styles.list}>
                             {reasons.map((reason, index) => (
                                 <li key={index} className={styles.listItem}>
-                                    <span className={styles.checkIcon}>✓</span>
+                                    <span className={styles.checkIcon}>✔️</span>
                                     <span className={styles.text}>{reason}</span>
                                 </li>
                             ))}
                         </ul>
+                        <div style={{ marginTop: '2rem', fontWeight: 'bold', color: '#b91c1c', textAlign: 'center' }}>
+                            ขายฝากกับเรา = เงินเร็ว ใจสบาย มีทางออกจริง
+                        </div>
                     </div>
 
                     <div className={styles.imageBox}>
