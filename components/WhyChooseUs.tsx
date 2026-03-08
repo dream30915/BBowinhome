@@ -48,10 +48,6 @@ export default function WhyChooseUs() {
                     <div className={styles.imageBox}>
                         <div className={styles.imageOverlay} />
                         <img src="/service-mortgage.jpg" alt="Professional Service" className={styles.image} />
-                        <div className={styles.expBadge}>
-                            <span className={styles.expNumber}>10+</span>
-                            <span className={styles.expText}>Years Experience</span>
-                        </div>
                     </div>
                 </div>
             </div>
