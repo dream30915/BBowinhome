@@ -2,17 +2,19 @@ import styles from './WhyChooseUs.module.css';
 
 export default function WhyChooseUs() {
     const reasons = [
-        "นิติบุคคลถูกต้องตามกฎหมาย จดทะเบียนพาณิชย์ครบถ้วน",
-        "ระบบที่ปรึกษา Private Fund ดูแลแบบ One-on-One",
-        "สัญญามาตรฐานสากล เป็นธรรม และตรวจสอบได้ทุกบรรทัด",
-        "ประเมินมูลค่าทรัพย์สินตามราคาตลาด (Market Price)",
-        "อัตราดอกเบี้ยพิเศษ (Effective Rate) แบบลดต้นลดดอก",
-        "อนุมัติวงเงินรวดเร็ว ทำนิติกรรมรับเช็คที่กรมที่ดินทันที",
-        "นโยบายรักษาความลับลูกค้าขั้นสูงสุด (Strict Confidentiality)",
-        "ยึดหลักการเจรจาหาทางออกและประนอมหนี้เป็นอันดับแรก",
-        "ไม่มีสัญญาแอบแฝง หรือค่าธรรมเนียมซ่อนเร้น",
-        "วงเงินรองรับระดับ High Value Asset ถึง 100 ล้านบาท"
+        "โปร่งใส ไม่มีค่าแอบแฝง",
+        "สัญญาถูกกฎหมาย อธิบายก่อนเซ็น",
+        "เงินไว ไม่กดราคา ไม่เอาเปรียบ",
+        "มีแผนไถ่ถอนจริง ดูแลเหมือนพาร์ทเนอร์"
     ];
+
+    const highlightedTextStyle = {
+        fontWeight: 'bold',
+        color: '#b91c1c',
+        textAlign: 'center' as const,
+        fontSize: '1.25rem',
+        marginBottom: '1.5rem'
+    };
 
     return (
         <section className={styles.section}>
@@ -24,14 +26,23 @@ export default function WhyChooseUs() {
 
                 <div className={styles.grid}>
                     <div className={styles.contentBox}>
+                        <div style={highlightedTextStyle}>
+                            เพราะเราไม่ได้แค่ให้เงินเร็ว<br />
+                            แต่ช่วยคิด วางแผน และปิดความเสี่ยงให้คุณ
+                        </div>
+
                         <ul className={styles.list}>
                             {reasons.map((reason, index) => (
                                 <li key={index} className={styles.listItem}>
-                                    <span className={styles.checkIcon}>✓</span>
+                                    <span className={styles.checkIcon}>✔️</span>
                                     <span className={styles.text}>{reason}</span>
                                 </li>
                             ))}
                         </ul>
+
+                        <div style={{ ...highlightedTextStyle, marginTop: '2rem', marginBottom: 0 }}>
+                            ขายฝากกับเรา = เงินเร็ว ใจสบาย มีทางออกจริง
+                        </div>
                     </div>
 
                     <div className={styles.imageBox}>
