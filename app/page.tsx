@@ -8,8 +8,7 @@ import WhyChooseUs from "@/components/WhyChooseUs";
 import FloatingContact from "@/components/FloatingContact";
 import Articles from "@/components/Articles";
 import Footer from "@/components/Footer";
-import FeaturedListings from "@/components/FeaturedListings";
-import Testimonials from "@/components/Testimonials";
+
 
 export default function Home() {
   return (
@@ -19,8 +18,7 @@ export default function Home() {
       <Services />
       <InterestCalculator />
       <WhyChooseUs />
-      <FeaturedListings />
-      <Testimonials />
+
       {/* <Articles /> Removed as per request */}
       <FloatingContact />
       <Footer />
