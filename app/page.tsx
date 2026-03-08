@@ -15,9 +15,9 @@ export default function Home() {
     <main>
       <Navbar />
       <Hero />
+      <WhyChooseUs />
       <Services />
       <InterestCalculator />
-      <WhyChooseUs />
 
       {/* <Articles /> Removed as per request */}
       <FloatingContact />
